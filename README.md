@@ -41,7 +41,7 @@ Vai nel file application.properties e aggiunti la tua API come nell'esempio open
 ```bash
 docker-compose up --build
 ```
-### 3. Avvio browser
+### 4. Avvio browser
 Da inserire come url
 ```bash
 localhost:8080/
