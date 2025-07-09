@@ -23,9 +23,6 @@
   - Temperatura
   - Descrizione condizioni meteo (es. pioggia, sereno)
   - Umidità
-  - Velocità del vento
-  - Icona meteo
-- Gestione errori (es. città non trovata)
 - Interfaccia web semplice ed intuitiva
 
 ---
