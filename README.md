@@ -33,3 +33,6 @@
 
 ```bash
 git clone https://github.com/Chenxiaolong04/weather-app.git
+```
+### 2. Registrati sul sito OpenWeather e copiati la chiave API nel profilo
+Vai nel file application.properties e aggiunti la tua API come nell'esempio openweathermap.api.key=ec82b5f58ce5178c944bb8b2e9f2a6ad.
