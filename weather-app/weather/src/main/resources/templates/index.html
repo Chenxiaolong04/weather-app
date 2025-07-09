@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteo Italia</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <div class="container">
+
+    <h1>Meteo delle città italiane</h1>
+    <form method="get" action="/">
+        <label for="city">Seleziona una città:</label>
+        <select name="city" id="city">
+            <option th:each="c : ${cities}" th:value="${c}" th:text="${c}" 
+                th:selected="${c == selectedCity}"></option>
+        </select>
+        <button type="submit">Mostra meteo</button>
+    </form>
+
+    <div th:if="${weather != null}">
+        <h2 th:text="'Meteo per ' + ${weather.name}"></h2>
+        <p th:text="'Temperatura: ' + ${weather.main.temp} + '°C'"></p>
+        <p th:text="'Umidità: ' + ${weather.main.humidity} + '%'"></p>
+        <p th:text="'Descrizione: ' + ${weather.weather[0].description}"></p>
+    </div>
+        </div>
+
+</body>
+</html>
